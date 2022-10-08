@@ -20,8 +20,11 @@ h1, p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 10px 0;
 }
+h1{
+    font-size: 26px;
+}
 p{
-    font-size: 22px;
+    font-size: 15px;
     font-style: italic;
 }
 label{

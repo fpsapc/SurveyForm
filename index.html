@@ -10,68 +10,80 @@
 </head>
 
 <body>
+    <!-- setting background image -->
     <img class="bgImage" src="/img/school.jpg" alt="School Image">
+    <!-- title for the given form -->
     <h1 id="title">GHS KOT SONDHA INFORMATION COLLECITON FORM</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <!-- creating form  -->
     <form action="submit" id="survey-form">
-        <div class="container"></div>
-        <label for="name" id="name-label">Name
-            <input type="text" id="name" placeholder="Enter Your Name"  required \>
-        </label>
-        <label for="email" id="email-label">Email
-            <input type="email" id="email" placeholder="Enter Your Email" required \>
-        </label>
-        <label for="age" id="number-label">Age(Optional)
-            <input type="number" id="number" min="13" max="120" name="age" placeholder="Enter your age" \>
-        </label>
-        <label for="dropdown">Which option best describes your current role?<select id="dropdown">
-        <option value="" disabled>Choose an Option</option>
-        <option value="classIncharge">Class Incharge</option>
-        <option value="classTeacher">Class Teacher</option>
-        <option value="classMonitor">Class Monitor</option>
-        <option value="student">Student</option>
-        </select></label>
+        <!-- create input elements for name, email, age -->
+        <fieldset>
+            <label for="name" id="name-label">Name
+                <input type="text" id="name" placeholder="Enter Your Name" required \>
+            </label>
+            <label for="email" id="email-label">Email
+                <input type="email" id="email" placeholder="Enter Your Email" required \>
+            </label>
+            <label for="age" id="number-label">Age(Optional)
+                <input type="number" id="number" min="13" max="120" name="age" placeholder="Enter your age" \>
+            </label>
+            <label for="role">Which option best describes your current role?
+                <!-- dropdown menu to select role -->
+                <select id="role">
+                    <option value="" disabled>Choose an Option</option>
+                    <option value="classIncharge">Class Incharge</option>
+                    <option value="classTeacher">Class Teacher</option>
+                    <option value="classMonitor">Class Monitor</option>
+                    <option value="student">Student</option>
+                </select>
+            </label>
+        </fieldset>
+        <!-- start of second section -->
+        <!-- create radio buttons to get recomendation -->
         <fieldset class="recomendation">
             <legend>Would you recommend a weekly test of all subjects?</legend>
-        <label for="definately">
-          <input type="radio" name="recomendation" id="definately" value="definately" class="inline"\>Definately 
-        </label>
-        <label for="maybe">
-            <input type="radio" name="recomendation" id="maybe" value="maybe" class="inline">Maybe  
-        </label>
-        <label for="notSure">
-            <input type="radio" name="recomendation" id="notSure" value="notSure" class="inline">Not Sure 
-        </label>
+            <label for="definately">
+                <input type="radio" name="recomendation" id="definately" value="definately" class="inline" \>Definately
+            </label>
+            <label for="maybe">
+                <input type="radio" name="recomendation" id="maybe" value="maybe" class="inline">Maybe
+            </label>
+            <label for="notSure">
+                <input type="radio" name="recomendation" id="notSure" value="notSure" class="inline">Not Sure
+            </label>
         </fieldset>
+        <!-- create checkbox to know about skills -->
         <fieldset>
             <legend>What is your favorite skill?</legend>
-        <label for="reading">
-            <input type="checkbox" name="reading" id="reading" value="reading" class="inline">Reading
-        </label>
-        <label for="writing">
-            <input type="checkbox" name="writing" id="writing" value="writing" class="inline">Writing
-        </label>
-        <label for="listening">
-            <input type="checkbox" name="listening" id="listening" value="listening" class="inline">Listening
-        </label>
-        <label for="speaking">
-            <input type="checkbox" name="speaking" id="speaking" value="speaking" class="inline">Speaking
-        </label>
-        <label for="playing">
-            <input type="checkbox" name="playing" id="playing" value="playing" class="inline">Playing
-        </label>
-        <label for="singing">
-            <input type="checkbox" name="singing" id="singing" value="singing" class="inline">Singing
-        </label>
-        <label for="memorizing">
-            <input type="checkbox" name="memorizing" id="memorizing" value="memorizing" class="inline">Memorizing
-        </label>
+            <label for="reading">
+                <input type="checkbox" name="reading" id="reading" value="reading" class="inline">Reading
+            </label>
+            <label for="writing">
+                <input type="checkbox" name="writing" id="writing" value="writing" class="inline">Writing
+            </label>
+            <label for="listening">
+                <input type="checkbox" name="listening" id="listening" value="listening" class="inline">Listening
+            </label>
+            <label for="speaking">
+                <input type="checkbox" name="speaking" id="speaking" value="speaking" class="inline">Speaking
+            </label>
+            <label for="playing">
+                <input type="checkbox" name="playing" id="playing" value="playing" class="inline">Playing
+            </label>
+            <label for="singing">
+                <input type="checkbox" name="singing" id="singing" value="singing" class="inline">Singing
+            </label>
+            <label for="memorizing">
+                <input type="checkbox" name="memorizing" id="memorizing" value="memorizing" class="inline">Memorizing
+            </label>
         </fieldset>
-        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Descripe yourself (minimum 50 words)" minlength="50">
+        <!-- create textarea and set minimum length 50 words -->
+        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Descripe yourself (minimum 50 words)"
+            minlength="50">
         </textarea>
+        <!-- create a submit button -->
         <button id="submit">Submit</button>
     </form>
-
 </body>
-
 </html>
