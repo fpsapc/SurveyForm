@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.bgImage{
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.3;
+    position: fixed;
+    z-index: -1;
+}   
+h1, p{
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    max-width: 500px;
+    min-width: 300px;
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 0;
+}
+p{
+    font-size: 22px;
+    font-style: italic;
+}
+label{
+display: block;
+margin: 0.5rem 0.5rem;
+font-size: 14px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#survey-form{
+width: 50vw;
+max-width: 500px;
+min-width: 300px;
+background-color: rgba(0,0,125,0.7);
+color: white;
+font-weight: 500;
+margin: 0 auto;
+padding-bottom: 2em;
+padding: 20px;
+}
+input, textarea, select{
+    min-height: 2em;
+    width: 100%;
+    padding: 7px;
+}
+input, textarea{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    color:rgb(204, 20, 20);
+}
+.recomendation{
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+  
+}
+.inline{
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+button{
+    display: block;
+    width: 100%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: rgb(0, 252, 63);
+    border-radius: 5px;
+    border-color: black;
+    min-width: 300px;
+}
+#dropdown{
+    vertical-align: middle;
+}
+fieldset{
+    border: none;
+}
